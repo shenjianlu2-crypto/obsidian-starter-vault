@@ -11,3 +11,4 @@
 
 ## 隐私与可移植性
 注意：插件本体随包提供，使用前请确认各插件的许可证及来源。若公开发布，推荐在仓库中说明插件原始项目链接和许可证。
+<img width="1440" height="828" alt="image" src="https://github.com/user-attachments/assets/b6eb7a9c-608a-4cd1-a36e-75a51a43e557" />
