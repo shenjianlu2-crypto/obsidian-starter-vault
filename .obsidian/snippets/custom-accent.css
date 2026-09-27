@@ -1,0 +1,10 @@
+/* 莫兰迪灰蓝绿 */
+.theme-light {
+  --ctp-accent: 113, 140, 138 !important;
+
+  --interactive-accent: #718c8a !important;
+  --interactive-accent-hover: #647f7d !important;
+
+  --text-accent: #718c8a !important;
+  --text-accent-hover: #647f7d !important;
+}

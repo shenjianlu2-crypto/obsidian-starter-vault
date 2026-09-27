@@ -1,0 +1,20 @@
+/* 1. 隐藏 Obsidian 原生文件夹折叠箭头 */
+.nav-files-container
+.nav-folder-title
+> .tree-item-icon.collapse-icon {
+    display: none !important;
+}
+
+
+/* 2. 把插件自定义图标向左拉回原折叠箭头的位置 */
+.nav-files-container
+.nav-folder-title::before {
+    margin-inline-start: -20px !important;
+}
+
+
+/* 3. 自定义图标和文字之间留一点正常间距 */
+.nav-files-container
+.nav-folder-title::before {
+    margin-inline-end: 6px !important;
+}

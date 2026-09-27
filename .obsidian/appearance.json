@@ -1,0 +1,14 @@
+{
+  "cssTheme": "AnuPpuccin",
+  "theme": "moonstone",
+  "translucency": false,
+  "enabledCssSnippets": [
+    "custom-rainbow-colors",
+    "floating-search-bar",
+    "floating-status-bar",
+    "custom-accent",
+    "minimal-cards",
+    "home-dashboard"
+  ],
+  "accentColor": ""
+}

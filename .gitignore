@@ -1,0 +1,17 @@
+# Local/private Obsidian state
+.obsidian/workspace*.json
+.obsidian/.DS_Store
+.obsidian/plugins/chatting-with-ai/chat-state.json
+.obsidian/plugins/chatting-with-ai/debug.log
+.obsidian/plugins/chatting-with-ai/data.json
+.obsidian/plugins/copilot/data.json
+.DS_Store
+__MACOSX/
+
+# Private AI configuration and chat history
+.obsidian/plugins/chatting-with-ai/data.json
+.obsidian/plugins/chatting-with-ai/chat-state.json
+.obsidian/plugins/chatting-with-ai/*.log
+
+# macOS metadata
+.DS_Store

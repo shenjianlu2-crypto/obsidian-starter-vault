@@ -1,0 +1,118 @@
+/* =========================
+   Home Dashboard
+   Morandi × AnuPpuccin
+   ========================= */
+
+.home-dashboard {
+  --home-green: #718c8a;
+  --home-green-deep: #5f7775;
+  --home-cream: #f3ece3;
+  --home-border: rgba(113, 140, 138, 0.22);
+}
+
+/* 首页标题 */
+.home-dashboard h1 {
+  color: var(--home-green-deep) !important;
+  font-size: 2.2em;
+  margin-bottom: 0.6em;
+}
+
+/* 欢迎卡片 */
+.home-dashboard .callout[data-callout="quote"] {
+  background: rgba(243, 236, 227, 0.55) !important;
+  border: 1px solid var(--home-border) !important;
+  border-radius: 14px !important;
+}
+
+/* =========================
+   专门用于容纳四张卡片
+   ========================= */
+
+.home-dashboard .callout[data-callout="home-grid"] {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+/* 隐藏 home-grid 自己的标题 */
+.home-dashboard
+.callout[data-callout="home-grid"]
+> .callout-title {
+  display: none !important;
+}
+
+/* 只让四张 dashboard 卡片组成 2×2 */
+.home-dashboard
+.callout[data-callout="home-grid"]
+> .callout-content {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  padding: 0 !important;
+}
+
+/* 四张 Dashboard 卡片 */
+.home-dashboard .callout[data-callout="dashboard"] {
+  min-width: 0;
+  min-height: 190px;
+
+  margin: 0 !important;
+
+  background: rgba(243, 236, 227, 0.72) !important;
+  border: 1px solid var(--home-border) !important;
+  border-radius: 16px !important;
+
+  box-shadow: 0 4px 14px rgba(70, 85, 80, 0.06);
+
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.home-dashboard .callout[data-callout="dashboard"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(70, 85, 80, 0.10);
+}
+
+/* 卡片标题 */
+.home-dashboard
+.callout[data-callout="dashboard"]
+> .callout-title {
+  color: var(--home-green-deep) !important;
+  font-size: 1.12em;
+  font-weight: 700;
+  padding: 15px 17px 8px;
+}
+
+/* 隐藏 dashboard 默认图标 */
+.home-dashboard
+.callout[data-callout="dashboard"]
+> .callout-title
+.callout-icon {
+  display: none !important;
+}
+
+/* 卡片内容 */
+.home-dashboard
+.callout[data-callout="dashboard"]
+> .callout-content {
+  padding: 4px 17px 17px !important;
+}
+
+/* 链接 */
+.home-dashboard
+.callout[data-callout="dashboard"]
+a {
+  color: var(--home-green-deep) !important;
+  text-decoration: none;
+}
+
+/* 窄窗口自动单列 */
+@media (max-width: 800px) {
+  .home-dashboard
+  .callout[data-callout="home-grid"]
+  > .callout-content {
+    grid-template-columns: 1fr;
+  }
+}
